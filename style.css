@@ -1,0 +1,313 @@
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #112D4E;
+}
+body header {
+  background-color: #F9F7F7;
+  border-bottom: 1px solid lightgray;
+  position: sticky;
+  top: -34px;
+  z-index: 6;
+}
+body header .topHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #112D4E;
+  color: white;
+}
+body header .topHead a {
+  color: white;
+  padding: 1rem 0.5rem;
+}
+body header .midHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body header .midHead .leftSide {
+  display: flex;
+  align-items: center;
+}
+body header .midHead .leftSide i {
+  margin: 1rem;
+}
+body header .midHead .leftSide img {
+  height: 4rem;
+}
+body header .midHead .desktopNav ul {
+  display: flex;
+  list-style: none;
+}
+body header .midHead .desktopNav ul li {
+  margin: 0 4rem;
+}
+body header .midHead .desktopNav ul li a {
+  color: #112D4E;
+  font-size: large;
+  font-weight: 700;
+  text-decoration: none;
+}
+body header .midHead nav ul {
+  display: flex;
+  list-style: none;
+}
+body header .midHead nav ul li {
+  margin: 2rem;
+}
+body header .midHead nav ul li a {
+  color: #112D4E;
+}
+body main .movedBoxes {
+  display: flex;
+  overflow-x: scroll;
+  background-color: #F9F7F7;
+  width: 100%;
+}
+body main .movedBoxes .box {
+  margin: 1rem;
+  border: 1px solid lightgray;
+}
+body main .movedBoxes .box p {
+  padding: 0.5rem 1rem;
+}
+body main .container1 {
+  width: 100%;
+  -webkit-clip-path: inset(0px 0 -100px 0);
+          clip-path: inset(0px 0 -100px 0);
+}
+body main .container1 .featured {
+  width: 100%;
+  height: 30rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  box-shadow: 0 0 100px 10px black;
+}
+body main .container1 .logo {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: auto;
+  opacity: 0.7;
+}
+body main .movedBoxes2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #F9F7F7;
+  width: 100%;
+  margin: 10rem auto 0 auto;
+  -webkit-clip-path: inset(0px 0 -100px 0);
+          clip-path: inset(0px 0 -100px 0);
+  box-shadow: 0 0 100px 10px black;
+}
+body main .movedBoxes2 .box {
+  margin: 1rem;
+  border: 1px solid lightgray;
+}
+body main .movedBoxes2 .box p {
+  padding: 2rem 5rem;
+  font-weight: 700;
+  font-size: large;
+}
+body main h1 {
+  text-align: center;
+  margin: 10rem auto 0 auto;
+  background-color: #F9F7F7;
+  padding: 4rem;
+  border-top: 20px inset #3F72AF;
+  font-size: xx-large;
+  color: #112D4E;
+}
+body main .blanket {
+  background-color: #DBE2EF;
+  padding: 10rem;
+}
+body main .blanket .container2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  width: 90%;
+  padding: 2rem;
+  margin: 0 auto;
+  overflow-x: scroll;
+}
+body main .blanket .container2 .featuredPic {
+  position: relative;
+  border-left: 12px ridge #112D4E;
+}
+body main .blanket .container2 .featuredPic img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  min-width: 50rem;
+  height: 30rem;
+}
+body main .blanket .container2 .featuredPic p {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: xx-large;
+  color: #F9F7F7;
+  background-color: rgba(78, 78, 78, 0.462);
+  box-shadow: 0px 0px 15px 12px rgba(0, 0, 0, 0.392) inset;
+  padding: 1rem;
+  text-align: center;
+}
+body main .commission {
+  position: relative;
+}
+body main .commission .commsImg {
+  width: 100%;
+  height: 82.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body main .commission .centerText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.7;
+  color: #F9F7F7;
+  font-size: 500%;
+  width: 80%;
+  height: auto;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+}
+body footer {
+  background-color: #F9F7F7;
+}
+body footer form {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 5rem;
+}
+body footer form fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid darkgray;
+  border-left: none;
+  border-right: none;
+  padding: 2rem;
+}
+body footer form fieldset legend {
+  border: 1px solid darkgray;
+  padding: 0.5rem 1rem;
+}
+body footer form fieldset legend a {
+  text-decoration: none;
+  color: black;
+}
+body footer form fieldset #email {
+  width: 50%;
+  text-align: center;
+  border: none;
+  border-bottom: 1px solid darkgray;
+  background-color: rgba(255, 255, 255, 0.505);
+  padding: 1rem;
+  margin: 2rem;
+}
+body footer form fieldset #signup {
+  border: none;
+  background-color: rgb(50, 50, 50);
+  color: white;
+  padding: 1rem 3rem;
+}
+body footer .copyright {
+  display: flex;
+  justify-content: space-between;
+}
+body footer .copyright p {
+  margin: 1rem 3rem;
+}
+body footer #endLogo {
+  text-align: center;
+}
+body footer #endLogo img {
+  width: 70%;
+  margin: 2rem auto;
+}
+
+.featuredPic {
+  transition: all 0.1s ease-in;
+}
+
+.featuredPic:hover {
+  transform: scale(1.05) skew(-1deg);
+  z-index: 5;
+  box-shadow: -10px 0 10px 1px black;
+}
+
+#signup:hover {
+  background-color: black;
+}
+
+.box {
+  transition: all 0.1s ease-in-out;
+}
+
+body main .movedBoxes2 .box:hover {
+  border: 1px solid #3F72AF;
+  transform: skew(11deg);
+}
+
+@media screen and (max-width: 767px) {
+  body header .midHead .desktopNav {
+    display: none;
+  }
+  body main .movedBoxes2 {
+    display: none;
+  }
+  body main .movedBoxes2 .box {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  body header .midHead .leftSide i {
+    display: none;
+  }
+  body main .movedBoxes {
+    display: none;
+  }
+  body main .movedBoxes .box {
+    display: none;
+  }
+  body main .container1 .featured {
+    height: 75rem;
+  }
+  body main .container1 .logo {
+    top: 50%;
+  }
+  body main .blanket .container2 {
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  body main .blanket .container2 .featuredPic img {
+    height: 50rem;
+    min-width: 30rem;
+  }
+  body footer #endLogo img {
+    width: 30%;
+  }
+}/*# sourceMappingURL=style.css.map */
